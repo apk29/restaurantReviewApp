@@ -10,7 +10,7 @@ To view this project, download the files [here](https://github.com/apk29/restaur
 3. If you don't have python, please down load a version of python [here](https://www.python.org/downloads/)     and install. 
 4. Once you have installed python, using git bash command prompt or use terminal if you're on a mac and open to the locaiton of the app you've just downloaded. 
 5. Type the following: python -m http.server 8000
-6. Open up a web browser, and  visit the site: http://localhost:8000
+6. Open up a web browser and visit the site: http://localhost:8000
 
 Acknowledgments
 
