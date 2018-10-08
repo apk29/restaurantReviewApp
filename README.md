@@ -1,6 +1,6 @@
 # Restaurant Reviews App
 ---
-##Description:
+## Description:
 We were given a [starter code](https://apk29.github.io/arcadeGame/) for a static webpage. We were tasked to make the static web page into a mobile-ready web application and add a [service worker](https://developers.google.com/web/fundamentals/primers/service-workers/) to create a seamless offline experience for users. 
 
 To view this project, download the files [here](https://github.com/apk29/restaurantReviewApp).
