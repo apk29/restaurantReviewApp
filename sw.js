@@ -30,7 +30,6 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('activate', function(event) {
-  console.log("[ServiceWorker] activated");
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(
@@ -50,8 +49,8 @@ self.addEventListener('activate', function(event) {
 self.addEventListener('fetch', function(event) {
 
   event.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
     }).catch(function(err) {
       console.log(err);
     })
