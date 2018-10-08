@@ -13,6 +13,7 @@ To view this project, download the files [here](https://github.com/apk29/restaur
 6. Open up a web browser, and  visit the site: http://localhost:8000
 
 Acknowledgments
+
 -https://www.w3schools.com/
 -https://sites.google.com/udacity.com/gwgdevscholarship/fend/fend-resources
 
