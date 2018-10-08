@@ -14,7 +14,7 @@ To view this project, download the files [here](https://github.com/apk29/restaur
 
 Acknowledgments
 
--https://www.w3schools.com/
--https://sites.google.com/udacity.com/gwgdevscholarship/fend/fend-resources
+1. https://www.w3schools.com/
+2. https://sites.google.com/udacity.com/gwgdevscholarship/fend/fend-resources
 
 
