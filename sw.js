@@ -1,8 +1,8 @@
 let staticCacheName = 'restaurant-v1';
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function (event) {
   event.waitUntil(
-    caches.open(staticCacheName).then(function(cache) {
+    caches.open(staticCacheName).then(function (cache) {
       return cache.addAll([
         "./",
         "./img/1.jpg",
@@ -23,36 +23,36 @@ self.addEventListener('install', function(event) {
         "./js/main.js",
         "./js/restaurant_info.js",
       ]);
-    }).catch(function(err) {
+    }).catch(function (err) {
       console.log(err)
     })
   );
 });
 
-self.addEventListener('activate', function(event) {
+self.addEventListener('activate', function (event) {
   event.waitUntil(
-    caches.keys().then(function(cacheNames) {
+    caches.keys().then(function (cacheNames) {
       return Promise.all(
-        cacheNames.filter(function(cacheName) {
+        cacheNames.filter(function (cacheName) {
           return cacheName.startsWith('restaurant-') &&
-                 cacheName != staticCacheName;
-        }).map(function(cacheName) {
+            cacheName != staticCacheName;
+        }).map(function (cacheName) {
           return cache.delete(cacheName);
         })
       );
-    }).catch(function(err) {
+    }).catch(function (err) {
       console.log(err);
     })
   );
 });
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function (event) {
 
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request).then(function (response) {
       return response || fetch(event.request);
-    }).catch(function(err) {
-      console.log(err);
+    }).catch(function (err) {
+      /*console.log(err);*/
     })
   );
 });
